@@ -8,6 +8,10 @@ class TestProjectLogin(object):
     def test_successful_login(self):
         self.driver.get(env.page_url)
 
-        on.LoginPage.search_test(self)
-        on.LoginPage.screenshot(self)
+        on.LoginPageShop.is_title_matches(self)
+        on.LoginPageShop.click_signin(self)
+        on.LoginPageShop.signin_invalid_email(self)
+        on.LoginPageShop.signin_invalid_password(self)
+        on.LoginPageShop.signin_successful(self)
+
 

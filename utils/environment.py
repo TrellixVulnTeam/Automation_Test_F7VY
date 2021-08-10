@@ -1,14 +1,18 @@
 """ SITE CONSTANTS GO HERE """
 
 from pages import loginPage as lp,\
-    clothingShop as cs,\
-    phpTravels as pt
+    loginPageShop as lps,\
+    webbys as wbs,\
+    linknavigation as ln,\
+    cnt as cnt
     # pagefile as xx
 
 class Pages(object):
     LoginPage = lp.LoginPage
-    ClothingShop = cs.ClothingShop
-    PHPTravels = pt.PHPTravelsPage
+    LoginPageShop = lps.LoginPageShop
+    Webbys = wbs.TestWebbys
+    LinkNav = ln.TestLinks
+    CNT = cnt.TestCNT
   #  SamplePage = smp.SamplePage
 
 # ENVIRONMENT
@@ -19,9 +23,12 @@ environments = {
     'PROD'  : 'https://www.adidas-style.com',
     'PRAC'  : 'https://learn.letskodeit.com/p/practice',
     'SHOP'  : 'http://automationpractice.com/index.php',
-    'PHPTRAVELS'    : 'https://www.phptravels.net/'
+    'PHPTRAVELS'    : 'https://www.phptravels.net/',
+    'WEBBYS' : 'https://www.webbyawards.com/winners/1997/',
+    'HTML'  : 'https://www.w3schools.com/html/default.asp',
+    'CNT'   : 'https://www.codeandtheory.com/'
 }
-page_url = environments['PHPTRAVELS']
+page_url = environments['CNT']
 force_logout = page_url+'/user/logout'
 
 

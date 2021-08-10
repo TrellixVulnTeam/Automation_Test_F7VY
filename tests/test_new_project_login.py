@@ -8,10 +8,6 @@ class TestProjectLogin(object):
     def test_successful_login(self):
         self.driver.get(env.page_url)
 
-        #on.LoginPage.login_as_standard_user(self)
         on.LoginPage.search_test(self)
         on.LoginPage.screenshot(self)
-        #RicardoMilosNumbah1
-        on.LoginPage.createfile(self)
-        #JoyceDacanay
-        on.LoginPage.createfile(self)
+
